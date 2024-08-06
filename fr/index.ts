@@ -130,12 +130,10 @@ Comment catégoriseriez-vous cet e-mail ?`,
       shareDialog: {
         title: 'Partager',
         off: {
-          content:
-            'Le partage de lien est désactivé, vous seul pouvez donc accéder à ce bot via son URL.',
+          content: 'Le partage de lien est désactivé, vous seul pouvez donc accéder à ce bot via son URL.',
         },
         on: {
-          content:
-            'Le partage de lien est activé, donc TOUS les utilisateurs peuvent utiliser ce lien pour discuter.',
+          content: 'Le partage de lien est activé, donc TOUS les utilisateurs peuvent utiliser ce lien pour discuter.',
         },
       },
       error: {
@@ -181,16 +179,69 @@ Comment catégoriseriez-vous cet e-mail ?`,
     },
     error: {
       answerResponse: "Une erreur s'est produite lors de la réponse.",
-      notFoundConversation:
-        "Étant donné que le chat spécifié n'existe pas, un nouvel écran de conversation s'affiche.",
+      notFoundConversation: "Étant donné que le chat spécifié n'existe pas, un nouvel écran de conversation s'affiche.",
       notFoundPage: 'La page que vous recherchez est introuvable.',
       predict: {
         general: "Une erreur s'est produite lors de la prédiction.",
-        invalidResponse:
-          'Réponse inattendue reçue. Le format de la réponse ne correspond pas au format attendu.',
+        invalidResponse: 'Réponse inattendue reçue. Le format de la réponse ne correspond pas au format attendu.',
       },
-      notSupportedImage:
-        'Le modèle sélectionné ne prend pas en charge les images.',
+      notSupportedImage: 'Le modèle sélectionné ne prend pas en charge les images.',
+    },
+    //
+    signIn: {
+      username: {
+        placeholder: t('signIn.placeholder.enterEmail'),
+      },
+    },
+    signUp: {
+      password: {
+        label: 'Mot de passe:',
+        placeholder: t('signIn.placeholder.enterPassword'),
+        isRequired: false,
+        order: 2,
+      },
+      confirm_password: {
+        label: 'Confirmer le mot de passe:',
+        order: 1,
+      },
+    },
+    forceNewPassword: {
+      password: {
+        placeholder: 'Entrez votre mot de passe:',
+      },
+    },
+    forgotPassword: {
+      username: {
+        placeholder: 'Entrez votre email:',
+      },
+    },
+    confirmResetPassword: {
+      confirmation_code: {
+        placeholder: 'Entrez votre code de confirmation:',
+        label: 'Nouvelle étiquette',
+        isRequired: false,
+      },
+      confirm_password: {
+        placeholder: "Entrez votre mot de passe s'il vous plaît:",
+      },
+    },
+    setupTotp: {
+      QR: {
+        totpIssuer: 'émetteur de test',
+        totpUsername: 'utilisateur_test_amplify_qr',
+      },
+      confirmation_code: {
+        label: 'Nouvelle étiquette',
+        placeholder: 'Entrez votre code de confirmation:',
+        isRequired: false,
+      },
+    },
+    confirmSignIn: {
+      confirmation_code: {
+        label: 'Nouvelle étiquette',
+        placeholder: 'Entrez votre code de confirmation:',
+        isRequired: false,
+      },
     },
   },
 };

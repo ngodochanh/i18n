@@ -1,6 +1,9 @@
 const translation = {
   translation: {
     signIn: {
+      username: {
+        placeholder: t('signIn.placeholder.enterEmail'),
+      },
       button: {
         login: 'Login',
       },
@@ -35,8 +38,7 @@ const translation = {
         noBots: 'Nessun Bot.',
         noBotsRecentlyUsed: 'Nessun Bot condiviso utilizzato di recente.',
         retrievingKnowledge: '[Recupero delle informazioni...]',
-        dndFileUpload:
-          'Puoi caricare i file trascinandoli.\nFile supportati: {{fileExtensions}}',
+        dndFileUpload: 'Puoi caricare i file trascinandoli.\nFile supportati: {{fileExtensions}}',
         uploadError: 'Messaggio di errore',
         referenceLink: 'Link di riferimento',
         syncStatus: {
@@ -157,18 +159,15 @@ Come classificheresti questa email?`,
           usagePlan:
             "I piani di utilizzo specificano il numero o la frequenza di richieste che la tua API accetta da un client. Associa un'API a un piano di utilizzo per tenere traccia delle richieste ricevute dalla tua API.",
           throttling: 'Limita la frequenza con cui gli utenti possono chiamare la tua API.',
-          rateLimit:
-            'Inserisci la velocità, in richieste al secondo, con cui i client possono chiamare la tua API.',
-          burstLimit:
-            'Inserisci il numero di richieste simultanee che un client può effettuare alla tua API.',
+          rateLimit: 'Inserisci la velocità, in richieste al secondo, con cui i client possono chiamare la tua API.',
+          burstLimit: 'Inserisci il numero di richieste simultanee che un client può effettuare alla tua API.',
           quota:
             'Attiva le quote per limitare il numero di richieste che un utente può effettuare alla tua API in un determinato periodo di tempo.',
           requestLimit:
             "Inserisci il numero totale di richieste che un utente può effettuare nel periodo di tempo selezionato nell'elenco a discesa.",
           allowOrigins:
             "Origini client consentite per l'accesso. Se l'origine non è consentita, il chiamante riceve una risposta 403 Forbidden e gli viene negato l'accesso all'API. L'origine deve seguire il formato:(http|https)://nome-host o (http|https)://nome-host:porta e possono essere utilizzati i caratteri jolly(*).",
-          allowOriginsExample:
-            'e.g. https://your-host-name.com, https://*.your-host-name.com, http://localhost:8000',
+          allowOriginsExample: 'e.g. https://your-host-name.com, https://*.your-host-name.com, http://localhost:8000',
           apiKeys:
             "Una chiave API è una stringa alfanumerica utilizzata per identificare un client della tua API. In caso contrario, il chiamante riceve una risposta 403 Forbidden e gli viene negato l'accesso all'API.",
         },
@@ -246,8 +245,7 @@ Come classificheresti questa email?`,
       sharedBotAnalytics: {
         label: {
           pageTitle: 'Analisi dei Bot condivisi',
-          noPublicBotUsages:
-            'Durante il Periodo di Calcolo non sono stati utilizzati Bot pubblici.',
+          noPublicBotUsages: 'Durante il Periodo di Calcolo non sono stati utilizzati Bot pubblici.',
           published: "L'API è pubblicata.",
           SearchCondition: {
             title: 'Periodo di calcolo',
@@ -257,10 +255,8 @@ Come classificheresti questa email?`,
           sortByCost: 'Ordina per costo',
         },
         help: {
-          overview:
-            'Monitora lo stato di utilizzo dei bot condivisi e delle API dei bot pubblicati.',
-          calculationPeriod:
-            'Se il periodo di calcolo non è impostato, verrà visualizzato il costo per oggi.',
+          overview: 'Monitora lo stato di utilizzo dei bot condivisi e delle API dei bot pubblicati.',
+          calculationPeriod: 'Se il periodo di calcolo non è impostato, verrà visualizzato il costo per oggi.',
         },
       },
       apiManagement: {
@@ -283,12 +279,9 @@ Come classificheresti questa email?`,
           codeBuildId: 'CodeBuild ID',
           usagePlanOn: 'ON',
           usagePlanOff: 'OFF',
-          rateLimit:
-            "<Bold>{{limit}}</Bold> richieste al secondo, che i client possono chiamare l'API.",
-          burstLimit:
-            "Il client può effettuare <Bold>{{limit}}</Bold> richieste simultanee all'API.",
-          requestsLimit:
-            'Puoi effettuare <Bold>{{limit}}</Bold> richieste <Bold>{{period}}</Bold>.',
+          rateLimit: "<Bold>{{limit}}</Bold> richieste al secondo, che i client possono chiamare l'API.",
+          burstLimit: "Il client può effettuare <Bold>{{limit}}</Bold> richieste simultanee all'API.",
+          requestsLimit: 'Puoi effettuare <Bold>{{limit}}</Bold> richieste <Bold>{{period}}</Bold>.',
         },
         alert: {
           noApiKeys: {
@@ -376,8 +369,7 @@ Come classificheresti questa email?`,
     },
     error: {
       answerResponse: 'Si è verificato un errore durante la risposta.',
-      notFoundConversation:
-        'Poiché la chat specificata non esiste, viene visualizzata una nuova schermata di chat.',
+      notFoundConversation: 'Poiché la chat specificata non esiste, viene visualizzata una nuova schermata di chat.',
       notFoundPage: 'La pagina che stai cercando non è stata trovata.',
       predict: {
         general: 'Si è verificato un errore durante la previsione.',
@@ -392,7 +384,59 @@ Come classificheresti questa email?`,
         message: 'Il valore massimo che può essere impostato è {{size}}',
       },
       chunkOverlapLessThanChunkSize: {
-        message: 'La sovrapposizione dei blocchi deve essere impostata su un valore inferiore alla dimensione del blocco',
+        message:
+          'La sovrapposizione dei blocchi deve essere impostata su un valore inferiore alla dimensione del blocco',
+      },
+    },
+    //
+    signUp: {
+      password: {
+        label: 'Password:',
+        placeholder: t('signIn.placeholder.enterPassword'),
+        isRequired: false,
+        order: 2,
+      },
+      confirm_password: {
+        label: 'Conferma Password:',
+        order: 1,
+      },
+    },
+    forceNewPassword: {
+      password: {
+        placeholder: 'Inserisci la tua Password:',
+      },
+    },
+    forgotPassword: {
+      username: {
+        placeholder: 'Inserisci la tua email:',
+      },
+    },
+    confirmResetPassword: {
+      confirmation_code: {
+        placeholder: 'Inserisci il tuo Codice di Conferma:',
+        label: 'Nuova Etichetta',
+        isRequired: false,
+      },
+      confirm_password: {
+        placeholder: 'Per favore, inserisci la tua Password:',
+      },
+    },
+    setupTotp: {
+      QR: {
+        totpIssuer: 'emittente di prova',
+        totpUsername: 'utente_test_amplify_qr',
+      },
+      confirmation_code: {
+        label: 'Nuova Etichetta',
+        placeholder: 'Inserisci il tuo Codice di Conferma:',
+        isRequired: false,
+      },
+    },
+    confirmSignIn: {
+      confirmation_code: {
+        label: 'Nuova Etichetta',
+        placeholder: 'Inserisci il tuo Codice di Conferma:',
+        isRequired: false,
       },
     },
   },

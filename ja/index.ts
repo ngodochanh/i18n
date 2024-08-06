@@ -4,6 +4,9 @@
 const translation = {
   translation: {
     signIn: {
+      username: {
+        placeholder: t('signIn.placeholder.enterEmail'),
+      },
       button: {
         login: 'ログイン',
       },
@@ -25,8 +28,7 @@ const translation = {
     agent: {
       label: 'エージェント',
       help: {
-        overview:
-          'エージェント機能を使用すると、チャットボットはより複雑なタスクを自動的に処理できます。',
+        overview: 'エージェント機能を使用すると、チャットボットはより複雑なタスクを自動的に処理できます。',
       },
       hint: 'エージェントは、ユーザーの質問に答えるため、どのツールを使用するかを自動的に判断します。考える時間が必要なため、応答時間が長くなる傾向にあります。1つ以上のツールをアクティブにすると、エージェントの機能が有効になります。逆に、ツールが選択されていない場合、エージェントの機能は利用されません。エージェントの機能が有効になると、ナレッジの利用も一つのツールとして扱われます。つまり、応答の際にナレッジが利用されない場合があります。',
       progress: {
@@ -39,8 +41,7 @@ const translation = {
         },
         sql_db_query: {
           name: 'データベースクエリ',
-          description:
-            'データベースから結果を取得するために、詳細で正確なSQLクエリを実行します。',
+          description: 'データベースから結果を取得するために、詳細で正確なSQLクエリを実行します。',
         },
         sql_db_schema: {
           name: 'データベーススキーマ',
@@ -48,8 +49,7 @@ const translation = {
         },
         sql_db_list_tables: {
           name: 'データベーステーブル一覧',
-          description:
-            'データベースで利用可能なすべてのテーブルをリストします。',
+          description: 'データベースで利用可能なすべてのテーブルをリストします。',
         },
         sql_db_query_checker: {
           name: 'クエリチェッカー',
@@ -79,8 +79,7 @@ const translation = {
         noBotsRecentlyUsed: '最近利用した公開ボットはありません。',
         retrievingKnowledge: '[ナレッジを取得中...]',
         referenceLink: '参考ドキュメント',
-        dndFileUpload:
-          'ドラッグ＆ドロップでファイルをアップロードできます。\n対応ファイル: {{fileExtensions}}',
+        dndFileUpload: 'ドラッグ＆ドロップでファイルをアップロードできます。\n対応ファイル: {{fileExtensions}}',
         uploadError: 'エラーメッセージ',
         syncStatus: {
           queue: '同期待ち',
@@ -111,8 +110,7 @@ const translation = {
         instructions:
           'ボットがどのように振る舞うか定義します。曖昧な指示をすると予測できない動きをすることがあるので、具体的に指示をしてください。',
         knowledge: {
-          overview:
-            '外部の情報をボットに提供することで、事前学習していないデータを扱えるようになります。',
+          overview: '外部の情報をボットに提供することで、事前学習していないデータを扱えるようになります。',
           url: 'URLを指定すると、そのURLの情報がナレッジとして利用されます。YouTube の動画の URL を設定すると、その動画の字幕がナレッジとして利用されます。',
           sitemap:
             'サイトマップのURLを指定すると、そのサイトマップ内のサイトを自動的にスクレイピングして得られた情報がナレッジとして利用されます。',
@@ -212,19 +210,14 @@ const translation = {
         help: {
           overview:
             'APIを公開することで外部のクライアントがボットを利用することが可能になります。APIを利用することで、外部のアプリケーションとの連携が可能になります。',
-          endpoint:
-            'クライアントは、このAPIエンドポイントを通じてボットを利用できます。',
+          endpoint: 'クライアントは、このAPIエンドポイントを通じてボットを利用できます。',
           usagePlan:
             '使用量プランは、APIがクライアントから受け入れられるリクエストの数またはレートを指定します。APIが受け取るリクエストは、この使用量プランに関連付けて追跡されます。',
           throttling: 'ユーザがAPIを呼び出せるレートを制限します。',
-          rateLimit:
-            'クライアントがAPIを呼び出すことができるレートを1秒あたりのリクエスト数で入力します。',
-          burstLimit:
-            'クライアントがAPIに対して同時に実行できるリクエストの数を入力します。',
-          quota:
-            'ある期間にユーザがAPIに対して実行できるリクエストの数を制限します。',
-          requestLimit:
-            'ドロップダウンリストで選択した期間にユーザが実行できるリクエストの総数を入力します。',
+          rateLimit: 'クライアントがAPIを呼び出すことができるレートを1秒あたりのリクエスト数で入力します。',
+          burstLimit: 'クライアントがAPIに対して同時に実行できるリクエストの数を入力します。',
+          quota: 'ある期間にユーザがAPIに対して実行できるリクエストの数を制限します。',
+          requestLimit: 'ドロップダウンリストで選択した期間にユーザが実行できるリクエストの総数を入力します。',
           allowOrigins:
             'アクセスを許可するクライアントのオリジンを入力します。許可されていないオリジンからAPIが呼び出された場合は、403 Forbidden エラーのレスポンスが返されて、アクセスが拒否されます。オリジンのフォーマットは、"(http|https)://host-name" または "(http|https)://host-name:port" である必要があります。なお、ワイルドカード(*)も利用可能です。',
           allowOriginsExample:
@@ -288,18 +281,15 @@ const translation = {
       shareDialog: {
         title: '共有',
         off: {
-          content:
-            '共有リンクが無効化されているため、あなた以外はこのボットにアクセスできません。',
+          content: '共有リンクが無効化されているため、あなた以外はこのボットにアクセスできません。',
         },
         on: {
-          content:
-            '共有リンクが有効化されているため、全てのユーザが共有リンクを使って会話できます。',
+          content: '共有リンクが有効化されているため、全てのユーザが共有リンクを使って会話できます。',
         },
       },
       error: {
         notSupportedFile: 'このファイル形式はサポートされていません。',
-        duplicatedFile:
-          '同一ファイル名のファイルが既にアップロードされています。',
+        duplicatedFile: '同一ファイル名のファイルが既にアップロードされています。',
         failDeleteApi: 'APIの削除に失敗しました。',
       },
     },
@@ -307,8 +297,7 @@ const translation = {
       sharedBotAnalytics: {
         label: {
           pageTitle: '公開ボット確認',
-          noPublicBotUsages:
-            '指定の集計期間内に公開ボットは利用されていません。',
+          noPublicBotUsages: '指定の集計期間内に公開ボットは利用されていません。',
           published: 'API公開中',
           SearchCondition: {
             title: '集計期間',
@@ -318,10 +307,8 @@ const translation = {
           sortByCost: '利用料金でソート',
         },
         help: {
-          overview:
-            '共有されているボットと公開済みのAPIにおける利用状況を確認できます。',
-          calculationPeriod:
-            '集計期間が未設定の場合は、本日の利用状況が表示されます。',
+          overview: '共有されているボットと公開済みのAPIにおける利用状況を確認できます。',
+          calculationPeriod: '集計期間が未設定の場合は、本日の利用状況が表示されます。',
         },
       },
       apiManagement: {
@@ -344,12 +331,9 @@ const translation = {
           codeBuildId: 'CodeBuild ID',
           usagePlanOn: 'ON',
           usagePlanOff: 'OFF',
-          rateLimit:
-            'クライアントは、毎秒 <Bold>{{limit}}</Bold> リクエストAPIを呼び出すことができます。',
-          burstLimit:
-            'クライアントは、同時に <Bold> {{ limit }}</Bold> リクエストAPIを呼び出すことができます。',
-          requestsLimit:
-            '<Bold>{{period}}</Bold> <Bold>{{limit}}</Bold> リクエストAPIを呼び出すことができます。',
+          rateLimit: 'クライアントは、毎秒 <Bold>{{limit}}</Bold> リクエストAPIを呼び出すことができます。',
+          burstLimit: 'クライアントは、同時に <Bold> {{ limit }}</Bold> リクエストAPIを呼び出すことができます。',
+          requestsLimit: '<Bold>{{period}}</Bold> <Bold>{{limit}}</Bold> リクエストAPIを呼び出すことができます。',
         },
         alert: {
           noApiKeys: {
@@ -442,8 +426,7 @@ const translation = {
         hint: '隣接するチャンク同士で重複する文字数を指定します。',
       },
       enablePartitionPdf: {
-        label:
-          'PDFの詳細解析の有効化。有効にすると時間をかけてPDFを詳細に分析します。',
+        label: 'PDFの詳細解析の有効化。有効にすると時間をかけてPDFを詳細に分析します。',
         hint: '検索精度を高めたい場合に有効です。計算により多くの時間がかかるため計算コストが増加します。',
       },
       help: {
@@ -463,8 +446,7 @@ const translation = {
     },
     generationConfig: {
       title: '推論パラメーターの設定',
-      description:
-        'LLM の推論パラメーターを設定して、モデルからの応答を制御することができます。',
+      description: 'LLM の推論パラメーターを設定して、モデルからの応答を制御することができます。',
       maxTokens: {
         label: '最大長',
         hint: '生成されるトークン数の最大長を指定します。',
@@ -491,8 +473,7 @@ const translation = {
     },
     searchSettings: {
       title: '検索設定',
-      description:
-        'ベクトルストアから関連ドキュメントを検索する際の設定が行えます。',
+      description: 'ベクトルストアから関連ドキュメントを検索する際の設定が行えます。',
       maxResults: {
         label: '最大検索数',
         hint: 'ベクトルストアから検索するレコードの最大数',
@@ -500,8 +481,7 @@ const translation = {
     },
     error: {
       answerResponse: '回答中にエラーが発生しました。',
-      notFoundConversation:
-        '指定のチャットは存在しないため、新規チャット画面を表示しました。',
+      notFoundConversation: '指定のチャットは存在しないため、新規チャット画面を表示しました。',
       notFoundPage: 'お探しのページが見つかりませんでした。',
       unexpectedError: {
         title: '予期せぬエラーが発生しました',
@@ -513,8 +493,7 @@ const translation = {
       },
       notSupportedImage: '選択しているモデルは、画像を利用できません。',
       unsupportedFileFormat: '選択したファイル形式はサポートされていません。',
-      totalFileSizeToSendExceeded:
-        'ファイルサイズの合計が{{maxSize}}を超えています。',
+      totalFileSizeToSendExceeded: 'ファイルサイズの合計が{{maxSize}}を超えています。',
       attachment: {
         fileSizeExceeded: 'ファイルサイズは{{maxSize}}以下にしてください。',
         fileCountExceeded: 'ファイル数は{{maxCount}}以下にしてください。',
@@ -529,8 +508,7 @@ const translation = {
         message: '設定できる最小値は{{size}}です',
       },
       chunkOverlapLessThanChunkSize: {
-        message:
-          'チャンクオーバーラップはチャンクサイズより小さく設定する必要があります',
+        message: 'チャンクオーバーラップはチャンクサイズより小さく設定する必要があります',
       },
       quickStarter: {
         message: 'タイトルと入力例は、どちらも入力してください。',
@@ -543,6 +521,57 @@ const translation = {
           focusInput: 'チャット入力にフォーカスを移す',
           newChat: '新しいチャットを開く',
         },
+      },
+    },
+    //
+    signUp: {
+      password: {
+        label: 'パスワード:',
+        placeholder: t('signIn.placeholder.enterPassword'),
+        isRequired: false,
+        order: 2,
+      },
+      confirm_password: {
+        label: 'パスワードの確認:',
+        order: 1,
+      },
+    },
+    forceNewPassword: {
+      password: {
+        placeholder: 'パスワードを入力してください:',
+      },
+    },
+    forgotPassword: {
+      username: {
+        placeholder: 'メールアドレスを入力してください:',
+      },
+    },
+    confirmResetPassword: {
+      confirmation_code: {
+        placeholder: '確認コードを入力してください:',
+        label: '新しいラベル',
+        isRequired: false,
+      },
+      confirm_password: {
+        placeholder: 'パスワードを入力してください:',
+      },
+    },
+    setupTotp: {
+      QR: {
+        totpIssuer: 'テスト発行者',
+        totpUsername: 'amplify_qr_test_user',
+      },
+      confirmation_code: {
+        label: '新しいラベル',
+        placeholder: '確認コードを入力してください:',
+        isRequired: false,
+      },
+    },
+    confirmSignIn: {
+      confirmation_code: {
+        label: '新しいラベル',
+        placeholder: '確認コードを入力してください:',
+        isRequired: false,
       },
     },
   },

@@ -1,6 +1,9 @@
 const translation = {
   translation: {
     signIn: {
+      username: {
+        placeholder: t('signIn.placeholder.enterEmail'),
+      },
       button: {
         login: 'Iniciar sesión',
       },
@@ -57,12 +60,16 @@ const translation = {
         copiedLink: 'Copiado',
       },
       help: {
-        overview: 'Los bots operan según instrucciones predefinidas. El chat no funciona como se espera a menos que el contexto esté definido en el mensaje, pero con los bots, no es necesario definir el contexto.',
-        instructions: 'Define cómo debe comportarse el bot. Dar instrucciones ambiguas puede llevar a movimientos impredecibles, por lo tanto, proporciona instrucciones claras y específicas.',
+        overview:
+          'Los bots operan según instrucciones predefinidas. El chat no funciona como se espera a menos que el contexto esté definido en el mensaje, pero con los bots, no es necesario definir el contexto.',
+        instructions:
+          'Define cómo debe comportarse el bot. Dar instrucciones ambiguas puede llevar a movimientos impredecibles, por lo tanto, proporciona instrucciones claras y específicas.',
         knowledge: {
-          overview: 'Al proporcionar conocimiento externo al bot, este puede manejar datos sobre los que no ha sido preentrenado.',
+          overview:
+            'Al proporcionar conocimiento externo al bot, este puede manejar datos sobre los que no ha sido preentrenado.',
           url: 'La información de la URL especificada se utilizará como Conocimiento. Si configuras la URL de un video de YouTube, la transcripción de ese video se utilizará como Conocimiento.',
-          sitemap: 'Al especificar la URL del mapa del sitio, la información obtenida al raspar automáticamente los sitios web dentro de él se utilizará como Conocimiento.',
+          sitemap:
+            'Al especificar la URL del mapa del sitio, la información obtenida al raspar automáticamente los sitios web dentro de él se utilizará como Conocimiento.',
           file: 'Los archivos subidos se utilizarán como Conocimiento.',
         },
       },
@@ -147,17 +154,24 @@ Las categorías de clasificación son:
           offset: 'Compensación',
         },
         help: {
-          overview: "Crear una API permite que las funciones del Bot sean accesibles por clientes externos; las APIs permiten la integración con aplicaciones externas.",
+          overview:
+            'Crear una API permite que las funciones del Bot sean accesibles por clientes externos; las APIs permiten la integración con aplicaciones externas.',
           endpoint: 'El cliente puede usar el Bot desde este punto final.',
-          usagePlan: 'Los planes de uso especifican el número o la tasa de solicitudes que tu API acepta de un cliente. Asocia una API con un plan de uso para rastrear las solicitudes que recibe tu API.',
+          usagePlan:
+            'Los planes de uso especifican el número o la tasa de solicitudes que tu API acepta de un cliente. Asocia una API con un plan de uso para rastrear las solicitudes que recibe tu API.',
           throttling: 'Limita la tasa a la que los usuarios pueden llamar a tu API.',
           rateLimit: 'Ingresa la tasa, en solicitudes por segundo, que los clientes pueden llamar a tu API.',
           burstLimit: 'Ingresa el número de solicitudes concurrentes que un cliente puede hacer a tu API.',
-          quota: 'Activa las cuotas para limitar el número de solicitudes que un usuario puede hacer a tu API en un período de tiempo dado.',
-          requestLimit: 'Ingresa el número total de solicitudes que un usuario puede hacer en el período de tiempo que selecciones en la lista desplegable.',
-          allowOrigins: 'Orígenes de clientes permitidos para el acceso. Si el origen no está permitido, el llamador recibe una respuesta 403 Prohibido y se le niega el acceso a la API. El origen debe seguir el formato: "(http|https)://nombre-de-host" o "(http|https)://nombre-de-host:puerto" y se pueden usar comodines(*).',
-          allowOriginsExample: 'ej. https://tu-nombre-de-host.com, https://*.tu-nombre-de-host.com, http://localhost:8000',
-          apiKeys: 'Una clave API es una cadena alfanumérica que se utiliza para identificar a un cliente de tu API. De lo contrario, el llamador recibe una respuesta 403 Prohibido y se le niega el acceso a la API.',
+          quota:
+            'Activa las cuotas para limitar el número de solicitudes que un usuario puede hacer a tu API en un período de tiempo dado.',
+          requestLimit:
+            'Ingresa el número total de solicitudes que un usuario puede hacer en el período de tiempo que selecciones en la lista desplegable.',
+          allowOrigins:
+            'Orígenes de clientes permitidos para el acceso. Si el origen no está permitido, el llamador recibe una respuesta 403 Prohibido y se le niega el acceso a la API. El origen debe seguir el formato: "(http|https)://nombre-de-host" o "(http|https)://nombre-de-host:puerto" y se pueden usar comodines(*).',
+          allowOriginsExample:
+            'ej. https://tu-nombre-de-host.com, https://*.tu-nombre-de-host.com, http://localhost:8000',
+          apiKeys:
+            'Una clave API es una cadena alfanumérica que se utiliza para identificar a un cliente de tu API. De lo contrario, el llamador recibe una respuesta 403 Prohibido y se le niega el acceso a la API.',
         },
         button: {
           ApiKeyShow: 'Mostrar',
@@ -183,7 +197,8 @@ Las categorías de clasificación son:
         },
         deleteApiDaialog: {
           title: '¿Eliminar?',
-          content: '¿Estás seguro de eliminar la API? El punto final de la API será eliminado, y el cliente ya no tendrá acceso a ella.',
+          content:
+            '¿Estás seguro de eliminar la API? El punto final de la API será eliminado, y el cliente ya no tendrá acceso a ella.',
         },
         addApiKeyDialog: {
           title: 'Agregar Clave API',
@@ -191,7 +206,8 @@ Las categorías de clasificación son:
         },
         deleteApiKeyDialog: {
           title: '¿Eliminar?',
-          content: '¿Estás seguro de eliminar <Bold>{{title}}</Bold>?\nLos clientes que usan esta Clave API se les negará el acceso a la API.',
+          content:
+            '¿Estás seguro de eliminar <Bold>{{title}}</Bold>?\nLos clientes que usan esta Clave API se les negará el acceso a la API.',
         },
       },
       button: {
@@ -213,10 +229,12 @@ Las categorías de clasificación son:
       shareDialog: {
         title: 'Compartir',
         off: {
-          content: 'La compartición de enlace está desactivada, por lo tanto, solo tú puedes acceder a este bot a través de su URL.',
+          content:
+            'La compartición de enlace está desactivada, por lo tanto, solo tú puedes acceder a este bot a través de su URL.',
         },
         on: {
-          content: 'La compartición de enlace está activada, por lo que TODOS los usuarios pueden usar este enlace para conversación.',
+          content:
+            'La compartición de enlace está activada, por lo que TODOS los usuarios pueden usar este enlace para conversación.',
         },
       },
       error: {
@@ -326,7 +344,8 @@ Las categorías de clasificación son:
     },
     embeddingSettings: {
       title: 'Configuración de Incrustación',
-      description: 'Puedes configurar los parámetros para las incrustaciones vectoriales. Al ajustar los parámetros, puedes cambiar la precisión de la recuperación de documentos.',
+      description:
+        'Puedes configurar los parámetros para las incrustaciones vectoriales. Al ajustar los parámetros, puedes cambiar la precisión de la recuperación de documentos.',
       chunkSize: {
         label: 'tamaño de fragmento',
         hint: 'El tamaño del fragmento se refiere al tamaño en que un documento se divide en segmentos más pequeños',
@@ -336,8 +355,10 @@ Las categorías de clasificación son:
         hint: 'Puedes especificar el número de caracteres superpuestos entre fragmentos adyacentes.',
       },
       help: {
-        chunkSize: "Cuando el tamaño del fragmento es demasiado pequeño, se puede perder información contextual, y cuando es demasiado grande, puede existir diferente información contextual dentro del mismo fragmento, lo que puede reducir la precisión de la búsqueda.",
-        chunkOverlap: 'Al especificar el solapamiento de fragmentos, puedes preservar la información contextual alrededor de los límites de los fragmentos. Aumentar el tamaño del fragmento puede mejorar a veces la precisión de la búsqueda. Sin embargo, ten en cuenta que aumentar el solapamiento de los fragmentos puede llevar a costos computacionales más altos.',
+        chunkSize:
+          'Cuando el tamaño del fragmento es demasiado pequeño, se puede perder información contextual, y cuando es demasiado grande, puede existir diferente información contextual dentro del mismo fragmento, lo que puede reducir la precisión de la búsqueda.',
+        chunkOverlap:
+          'Al especificar el solapamiento de fragmentos, puedes preservar la información contextual alrededor de los límites de los fragmentos. Aumentar el tamaño del fragmento puede mejorar a veces la precisión de la búsqueda. Sin embargo, ten en cuenta que aumentar el solapamiento de los fragmentos puede llevar a costos computacionales más altos.',
       },
       alert: {
         sync: {
@@ -354,7 +375,8 @@ Las categorías de clasificación son:
       notFoundPage: 'La página que buscas no se encuentra.',
       predict: {
         general: 'Ocurrió un error al predecir.',
-        invalidResponse: 'Se recibió una respuesta inesperada. El formato de la respuesta no coincide con el formato esperado.',
+        invalidResponse:
+          'Se recibió una respuesta inesperada. El formato de la respuesta no coincide con el formato esperado.',
       },
       notSupportedImage: 'El modelo seleccionado no admite imágenes.',
     },
@@ -365,6 +387,57 @@ Las categorías de clasificación son:
       },
       chunkOverlapLessThanChunkSize: {
         message: 'El solapamiento de fragmentos debe ser menor que el tamaño de fragmento',
+      },
+    },
+    //
+    signUp: {
+      password: {
+        label: 'Contraseña:',
+        placeholder: t('signIn.placeholder.enterPassword'),
+        isRequired: false,
+        order: 2,
+      },
+      confirm_password: {
+        label: 'Confirmar Contraseña:',
+        order: 1,
+      },
+    },
+    forceNewPassword: {
+      password: {
+        placeholder: 'Introduce tu Contraseña:',
+      },
+    },
+    forgotPassword: {
+      username: {
+        placeholder: 'Introduce tu correo electrónico:',
+      },
+    },
+    confirmResetPassword: {
+      confirmation_code: {
+        placeholder: 'Introduce tu Código de Confirmación:',
+        label: 'Nueva Etiqueta',
+        isRequired: false,
+      },
+      confirm_password: {
+        placeholder: 'Por favor, introduce tu Contraseña:',
+      },
+    },
+    setupTotp: {
+      QR: {
+        totpIssuer: 'emisor de prueba',
+        totpUsername: 'usuario_prueba_amplify_qr',
+      },
+      confirmation_code: {
+        label: 'Nueva Etiqueta',
+        placeholder: 'Introduce tu Código de Confirmación:',
+        isRequired: false,
+      },
+    },
+    confirmSignIn: {
+      confirmation_code: {
+        label: 'Nueva Etiqueta',
+        placeholder: 'Introduce tu Código de Confirmación:',
+        isRequired: false,
       },
     },
   },

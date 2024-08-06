@@ -1,6 +1,9 @@
 const translation = {
   translation: {
     signIn: {
+      username: {
+        placeholder: t('signIn.placeholder.enterEmail'),
+      },
       button: {
         login: 'Đăng nhập',
       },
@@ -22,8 +25,7 @@ const translation = {
     agent: {
       label: 'Tác nhân',
       help: {
-        overview:
-          'Bằng cách sử dụng chức năng Tác nhân, chatbot của bạn có thể tự động xử lý các tác vụ phức tạp hơn.',
+        overview: 'Bằng cách sử dụng chức năng Tác nhân, chatbot của bạn có thể tự động xử lý các tác vụ phức tạp hơn.',
       },
       hint: `Tác nhân tự động xác định công cụ nào cần sử dụng để trả lời câu hỏi của người dùng. Do thời gian cần thiết cho việc quyết định, thời gian phản hồi thường dài hơn. Kích hoạt một hoặc nhiều công cụ sẽ bật chức năng của tác nhân. Ngược lại, nếu không có công cụ nào được chọn, chức năng của tác nhân sẽ không được sử dụng. Khi chức năng của tác nhân được bật, việc sử dụng "Kiến thức" cũng được coi là một trong những công cụ. Điều này có nghĩa là "Kiến thức" có thể không được sử dụng trong các phản hồi.`,
       progress: {
@@ -36,8 +38,7 @@ const translation = {
         },
         sql_db_query: {
           name: 'Truy vấn cơ sở dữ liệu',
-          description:
-            'Thực hiện truy vấn SQL chi tiết và chính xác để lấy kết quả từ cơ sở dữ liệu.',
+          description: 'Thực hiện truy vấn SQL chi tiết và chính xác để lấy kết quả từ cơ sở dữ liệu.',
         },
         sql_db_schema: {
           name: 'Sơ đồ cơ sở dữ liệu',
@@ -49,8 +50,7 @@ const translation = {
         },
         sql_db_query_checker: {
           name: 'Kiểm tra truy vấn',
-          description:
-            'Kiểm tra xem truy vấn SQL của bạn có chính xác không trước khi thực thi.',
+          description: 'Kiểm tra xem truy vấn SQL của bạn có chính xác không trước khi thực thi.',
         },
         internet_search: {
           name: 'Tìm kiếm Internet',
@@ -75,8 +75,7 @@ const translation = {
         noBots: 'Không có Bot.',
         noBotsRecentlyUsed: 'Không có Bot chia sẻ đã sử dụng gần đây.',
         retrievingKnowledge: '[Đang truy xuất kiến thức...]',
-        dndFileUpload:
-          'Bạn có thể tải lên tệp bằng cách kéo và thả.\nCác tệp được hỗ trợ: {{fileExtensions}}',
+        dndFileUpload: 'Bạn có thể tải lên tệp bằng cách kéo và thả.\nCác tệp được hỗ trợ: {{fileExtensions}}',
         uploadError: 'Thông báo lỗi',
         referenceLink: 'Liên kết tham khảo',
         syncStatus: {
@@ -118,8 +117,7 @@ const translation = {
             'Cấu hình xem có hiển thị ngữ cảnh được truy xuất để trả lời truy vấn của người dùng dưới dạng thông tin trích dẫn hay không.\nNếu được bật, người dùng có thể truy cập các URL nguồn gốc hoặc tệp.',
         },
         quickStarter: {
-          overview:
-            'Khi bắt đầu cuộc trò chuyện, cung cấp các ví dụ. Ví dụ minh họa cách sử dụng bot.',
+          overview: 'Khi bắt đầu cuộc trò chuyện, cung cấp các ví dụ. Ví dụ minh họa cách sử dụng bot.',
         },
       },
       alert: {
@@ -214,10 +212,8 @@ Bạn sẽ phân loại email này như thế nào?`,
           usagePlan:
             'Kế hoạch sử dụng xác định số lượng hoặc tốc độ yêu cầu mà API của bạn chấp nhận từ một máy khách. Liên kết API với kế hoạch sử dụng để theo dõi các yêu cầu mà API của bạn nhận được.',
           throttling: 'Giới hạn tốc độ mà người dùng có thể gọi API của bạn.',
-          rateLimit:
-            'Nhập tốc độ, tính bằng yêu cầu mỗi giây, mà máy khách có thể gọi API của bạn.',
-          burstLimit:
-            'Nhập số lượng yêu cầu đồng thời mà một máy khách có thể thực hiện đối với API của bạn.',
+          rateLimit: 'Nhập tốc độ, tính bằng yêu cầu mỗi giây, mà máy khách có thể gọi API của bạn.',
+          burstLimit: 'Nhập số lượng yêu cầu đồng thời mà một máy khách có thể thực hiện đối với API của bạn.',
           quota:
             'Bật hạn mức để giới hạn số lượng yêu cầu mà người dùng có thể thực hiện đối với API của bạn trong một khoảng thời gian nhất định.',
           requestLimit:
@@ -285,12 +281,10 @@ Bạn sẽ phân loại email này như thế nào?`,
       shareDialog: {
         title: 'Chia sẻ',
         off: {
-          content:
-            'Chia sẻ liên kết đang tắt, vì vậy chỉ bạn mới có thể truy cập bot này thông qua URL của nó.',
+          content: 'Chia sẻ liên kết đang tắt, vì vậy chỉ bạn mới có thể truy cập bot này thông qua URL của nó.',
         },
         on: {
-          content:
-            'Chia sẻ liên kết đang bật, vì vậy TẤT CẢ người dùng có thể sử dụng liên kết này để trò chuyện.',
+          content: 'Chia sẻ liên kết đang bật, vì vậy TẤT CẢ người dùng có thể sử dụng liên kết này để trò chuyện.',
         },
       },
       error: {
@@ -303,8 +297,7 @@ Bạn sẽ phân loại email này như thế nào?`,
       sharedBotAnalytics: {
         label: {
           pageTitle: 'Phân tích Bot chia sẻ',
-          noPublicBotUsages:
-            'Trong Kỳ Tính toán, không có bot công khai nào được sử dụng.',
+          noPublicBotUsages: 'Trong Kỳ Tính toán, không có bot công khai nào được sử dụng.',
           published: 'API đã được xuất bản.',
           SearchCondition: {
             title: 'Kỳ Tính toán',
@@ -314,10 +307,8 @@ Bạn sẽ phân loại email này như thế nào?`,
           sortByCost: 'Sắp xếp theo Chi phí',
         },
         help: {
-          overview:
-            'Theo dõi tình trạng sử dụng của Bot Chia sẻ và API Bot Đã Xuất bản.',
-          calculationPeriod:
-            'Nếu Kỳ Tính toán không được đặt, chi phí cho hôm nay sẽ được hiển thị.',
+          overview: 'Theo dõi tình trạng sử dụng của Bot Chia sẻ và API Bot Đã Xuất bản.',
+          calculationPeriod: 'Nếu Kỳ Tính toán không được đặt, chi phí cho hôm nay sẽ được hiển thị.',
         },
       },
       apiManagement: {
@@ -340,12 +331,9 @@ Bạn sẽ phân loại email này như thế nào?`,
           codeBuildId: 'ID CodeBuild',
           usagePlanOn: 'BẬT',
           usagePlanOff: 'TẮT',
-          rateLimit:
-            '<Bold>{{limit}}</Bold> yêu cầu mỗi giây, mà máy khách có thể gọi API.',
-          burstLimit:
-            'Máy khách có thể thực hiện <Bold>{{limit}}</Bold> yêu cầu đồng thời đến API.',
-          requestsLimit:
-            'Bạn có thể thực hiện <Bold>{{limit}}</Bold> yêu cầu <Bold>{{period}}</Bold>.',
+          rateLimit: '<Bold>{{limit}}</Bold> yêu cầu mỗi giây, mà máy khách có thể gọi API.',
+          burstLimit: 'Máy khách có thể thực hiện <Bold>{{limit}}</Bold> yêu cầu đồng thời đến API.',
+          requestsLimit: 'Bạn có thể thực hiện <Bold>{{limit}}</Bold> yêu cầu <Bold>{{period}}</Bold>.',
         },
         alert: {
           noApiKeys: {
@@ -438,8 +426,7 @@ Bạn sẽ phân loại email này như thế nào?`,
         hint: 'Bạn có thể chỉ định số ký tự chồng lấp giữa các đoạn liền kề.',
       },
       enablePartitionPdf: {
-        label:
-          'Bật phân tích PDF chi tiết. Nếu được bật, PDF sẽ được phân tích chi tiết theo thời gian.',
+        label: 'Bật phân tích PDF chi tiết. Nếu được bật, PDF sẽ được phân tích chi tiết theo thời gian.',
         hint: 'Nó hiệu quả khi bạn muốn cải thiện độ chính xác tìm kiếm. Chi phí tính toán tăng vì việc tính toán mất nhiều thời gian hơn.',
       },
       help: {
@@ -459,8 +446,7 @@ Bạn sẽ phân loại email này như thế nào?`,
     },
     generationConfig: {
       title: 'Cấu hình tạo',
-      description:
-        'Bạn có thể cấu hình các tham số suy luận LLM để kiểm soát phản hồi từ các mô hình.',
+      description: 'Bạn có thể cấu hình các tham số suy luận LLM để kiểm soát phản hồi từ các mô hình.',
       maxTokens: {
         label: 'Độ dài tạo tối đa/số token mới tối đa',
         hint: 'Số lượng token tối đa được phép trong phản hồi được tạo',
@@ -487,8 +473,7 @@ Bạn sẽ phân loại email này như thế nào?`,
     },
     searchSettings: {
       title: 'Cài đặt tìm kiếm',
-      description:
-        'Bạn có thể cấu hình các tham số tìm kiếm để lấy các tài liệu liên quan từ kho vector.',
+      description: 'Bạn có thể cấu hình các tham số tìm kiếm để lấy các tài liệu liên quan từ kho vector.',
       maxResults: {
         label: 'Kết quả tối đa',
         hint: 'Số lượng bản ghi tối đa được lấy từ kho vector',
@@ -505,16 +490,13 @@ Bạn sẽ phân loại email này như thế nào?`,
       },
       predict: {
         general: 'Đã xảy ra lỗi khi dự đoán.',
-        invalidResponse:
-          'Nhận được phản hồi không mong đợi. Định dạng phản hồi không khớp với định dạng mong đợi.',
+        invalidResponse: 'Nhận được phản hồi không mong đợi. Định dạng phản hồi không khớp với định dạng mong đợi.',
       },
       notSupportedImage: 'Mô hình được chọn không hỗ trợ hình ảnh.',
       unsupportedFileFormat: 'Định dạng tệp được chọn không được hỗ trợ.',
-      totalFileSizeToSendExceeded:
-        'Tổng kích thước tệp phải không quá {{maxSize}}.',
+      totalFileSizeToSendExceeded: 'Tổng kích thước tệp phải không quá {{maxSize}}.',
       attachment: {
-        fileSizeExceeded:
-          'Kích thước của mỗi tài liệu phải không quá {{maxSize}}.',
+        fileSizeExceeded: 'Kích thước của mỗi tài liệu phải không quá {{maxSize}}.',
         fileCountExceeded: 'Không thể tải lên quá {{maxCount}} tệp.',
       },
     },
@@ -540,6 +522,56 @@ Bạn sẽ phân loại email này như thế nào?`,
           focusInput: 'Chuyển trọng tâm đến đầu vào trò chuyện',
           newChat: 'Mở cuộc trò chuyện mới',
         },
+      },
+    },
+    signUp: {
+      password: {
+        label: 'Mật khẩu:',
+        placeholder: t('signIn.placeholder.enterPassword'),
+        isRequired: false,
+        order: 2,
+      },
+      confirm_password: {
+        label: 'Xác nhận mật khẩu:',
+        order: 1,
+      },
+    },
+    forceNewPassword: {
+      password: {
+        placeholder: 'Nhập mật khẩu của bạn:',
+      },
+    },
+    forgotPassword: {
+      username: {
+        placeholder: 'Nhập email của bạn:',
+      },
+    },
+    confirmResetPassword: {
+      confirmation_code: {
+        placeholder: 'Nhập mã xác nhận của bạn:',
+        label: 'Nhãn mới',
+        isRequired: false,
+      },
+      confirm_password: {
+        placeholder: 'Vui lòng nhập mật khẩu của bạn:',
+      },
+    },
+    setupTotp: {
+      QR: {
+        totpIssuer: 'nhà phát hành thử nghiệm',
+        totpUsername: 'nguoi_dung_thu_nghiem_amplify_qr',
+      },
+      confirmation_code: {
+        label: 'Nhãn mới',
+        placeholder: 'Nhập mã xác nhận của bạn:',
+        isRequired: false,
+      },
+    },
+    confirmSignIn: {
+      confirmation_code: {
+        label: 'Nhãn mới',
+        placeholder: 'Nhập mã xác nhận của bạn:',
+        isRequired: false,
       },
     },
   },

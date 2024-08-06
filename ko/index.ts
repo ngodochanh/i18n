@@ -35,12 +35,67 @@ const translation = {
     },
     error: {
       answerResponse: '응답 중 오류가 발생했습니다.',
-      notFoundConversation:
-        '지정된 채팅이 존재하지 않기 때문에 새로운 채팅 화면을 표시했습니다.',
+      notFoundConversation: '지정된 채팅이 존재하지 않기 때문에 새로운 채팅 화면을 표시했습니다.',
       notFoundPage: '찾고 있는 페이지를 찾을 수 없습니다.',
       predict: {
         general: '예측 중 오류가 발생했습니다.',
         invalidResponse: '예상치 못한 응답이 반환되었습니다.',
+      },
+    },
+    //
+    signIn: {
+      username: {
+        placeholder: t('signIn.placeholder.enterEmail'),
+      },
+    },
+    signUp: {
+      password: {
+        label: '비밀번호:',
+        placeholder: t('signIn.placeholder.enterPassword'),
+        isRequired: false,
+        order: 2,
+      },
+      confirm_password: {
+        label: '비밀번호 확인:',
+        order: 1,
+      },
+    },
+    forceNewPassword: {
+      password: {
+        placeholder: '비밀번호를 입력하세요:',
+      },
+    },
+    forgotPassword: {
+      username: {
+        placeholder: '이메일을 입력하세요:',
+      },
+    },
+    confirmResetPassword: {
+      confirmation_code: {
+        placeholder: '확인 코드를 입력하세요:',
+        label: '새로운 레이블',
+        isRequired: false,
+      },
+      confirm_password: {
+        placeholder: '비밀번호를 입력하세요:',
+      },
+    },
+    setupTotp: {
+      QR: {
+        totpIssuer: '테스트 발급자',
+        totpUsername: 'amplify_qr_test_user',
+      },
+      confirmation_code: {
+        label: '새로운 레이블',
+        placeholder: '확인 코드를 입력하세요:',
+        isRequired: false,
+      },
+    },
+    confirmSignIn: {
+      confirmation_code: {
+        label: '새로운 레이블',
+        placeholder: '확인 코드를 입력하세요:',
+        isRequired: false,
       },
     },
   },

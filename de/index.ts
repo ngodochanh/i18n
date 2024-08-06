@@ -189,6 +189,61 @@ Wie würden Sie diese E-Mail kategorisieren?`,
       },
       notSupportedImage: 'Das ausgewählte Model unterstützt keine Bilder.',
     },
+    signIn: {
+      username: {
+        placeholder: t('signIn.placeholder.enterEmail'), // "Geben Sie Ihre E-Mail ein"
+      },
+    },
+    signUp: {
+      password: {
+        label: 'Passwort:',
+        placeholder: t('signIn.placeholder.enterPassword'), // "Geben Sie Ihr Passwort ein"
+        isRequired: false,
+        order: 2,
+      },
+      confirm_password: {
+        label: 'Passwort bestätigen:',
+        order: 1,
+      },
+    },
+    forceNewPassword: {
+      password: {
+        placeholder: 'Geben Sie Ihr Passwort ein:',
+      },
+    },
+    forgotPassword: {
+      username: {
+        placeholder: 'Geben Sie Ihre E-Mail ein:',
+      },
+    },
+    confirmResetPassword: {
+      confirmation_code: {
+        placeholder: 'Geben Sie Ihren Bestätigungscode ein:',
+        label: 'Neues Label',
+        isRequired: false,
+      },
+      confirm_password: {
+        placeholder: 'Geben Sie bitte Ihr Passwort ein:',
+      },
+    },
+    setupTotp: {
+      QR: {
+        totpIssuer: 'Testaussteller',
+        totpUsername: 'amplify_qr_test_benutzer',
+      },
+      confirmation_code: {
+        label: 'Neues Label',
+        placeholder: 'Geben Sie Ihren Bestätigungscode ein:',
+        isRequired: false,
+      },
+    },
+    confirmSignIn: {
+      confirmation_code: {
+        label: 'Neues Label',
+        placeholder: 'Geben Sie Ihren Bestätigungscode ein:',
+        isRequired: false,
+      },
+    },
   },
 };
 
