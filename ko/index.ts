@@ -45,19 +45,20 @@ const translation = {
     //
     signIn: {
       username: {
-        placeholder: t('signIn.placeholder.enterEmail'),
+        placeholder: {
+          enterEmail: '이메일을 입력하세요',
+        },
       },
     },
     signUp: {
       password: {
         label: '비밀번호:',
-        placeholder: t('signIn.placeholder.enterPassword'),
-        isRequired: false,
-        order: 2,
+        placeholder: {
+          enterPassword: '비밀번호를 입력하세요',
+        },
       },
       confirm_password: {
         label: '비밀번호 확인:',
-        order: 1,
       },
     },
     forceNewPassword: {
@@ -74,7 +75,6 @@ const translation = {
       confirmation_code: {
         placeholder: '확인 코드를 입력하세요:',
         label: '새로운 레이블',
-        isRequired: false,
       },
       confirm_password: {
         placeholder: '비밀번호를 입력하세요:',
@@ -88,14 +88,12 @@ const translation = {
       confirmation_code: {
         label: '새로운 레이블',
         placeholder: '확인 코드를 입력하세요:',
-        isRequired: false,
       },
     },
     confirmSignIn: {
       confirmation_code: {
         label: '새로운 레이블',
         placeholder: '확인 코드를 입력하세요:',
-        isRequired: false,
       },
     },
   },

@@ -2,7 +2,9 @@ const translation = {
   translation: {
     signIn: {
       username: {
-        placeholder: t('signIn.placeholder.enterEmail'),
+        placeholder: {
+          enterEmail: 'Inserisci la tua email',
+        },
       },
       button: {
         login: 'Login',
@@ -392,13 +394,12 @@ Come classificheresti questa email?`,
     signUp: {
       password: {
         label: 'Password:',
-        placeholder: t('signIn.placeholder.enterPassword'),
-        isRequired: false,
-        order: 2,
+        placeholder: {
+          enterPassword: 'Inserisci la tua password',
+        },
       },
       confirm_password: {
         label: 'Conferma Password:',
-        order: 1,
       },
     },
     forceNewPassword: {
@@ -415,7 +416,6 @@ Come classificheresti questa email?`,
       confirmation_code: {
         placeholder: 'Inserisci il tuo Codice di Conferma:',
         label: 'Nuova Etichetta',
-        isRequired: false,
       },
       confirm_password: {
         placeholder: 'Per favore, inserisci la tua Password:',
@@ -429,14 +429,12 @@ Come classificheresti questa email?`,
       confirmation_code: {
         label: 'Nuova Etichetta',
         placeholder: 'Inserisci il tuo Codice di Conferma:',
-        isRequired: false,
       },
     },
     confirmSignIn: {
       confirmation_code: {
         label: 'Nuova Etichetta',
         placeholder: 'Inserisci il tuo Codice di Conferma:',
-        isRequired: false,
       },
     },
   },

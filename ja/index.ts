@@ -5,7 +5,9 @@ const translation = {
   translation: {
     signIn: {
       username: {
-        placeholder: t('signIn.placeholder.enterEmail'),
+        placeholder: {
+          enterEmail: 'メールアドレスを入力してください',
+        },
       },
       button: {
         login: 'ログイン',
@@ -527,13 +529,12 @@ const translation = {
     signUp: {
       password: {
         label: 'パスワード:',
-        placeholder: t('signIn.placeholder.enterPassword'),
-        isRequired: false,
-        order: 2,
+        placeholder: {
+          enterPassword: 'パスワードを入力してください',
+        },
       },
       confirm_password: {
         label: 'パスワードの確認:',
-        order: 1,
       },
     },
     forceNewPassword: {
@@ -550,7 +551,6 @@ const translation = {
       confirmation_code: {
         placeholder: '確認コードを入力してください:',
         label: '新しいラベル',
-        isRequired: false,
       },
       confirm_password: {
         placeholder: 'パスワードを入力してください:',
@@ -564,14 +564,12 @@ const translation = {
       confirmation_code: {
         label: '新しいラベル',
         placeholder: '確認コードを入力してください:',
-        isRequired: false,
       },
     },
     confirmSignIn: {
       confirmation_code: {
         label: '新しいラベル',
         placeholder: '確認コードを入力してください:',
-        isRequired: false,
       },
     },
   },

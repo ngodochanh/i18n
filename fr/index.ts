@@ -190,19 +190,20 @@ Comment catégoriseriez-vous cet e-mail ?`,
     //
     signIn: {
       username: {
-        placeholder: t('signIn.placeholder.enterEmail'),
+        placeholder: {
+          enterEmail: 'Entrez votre e-mail',
+        },
       },
     },
     signUp: {
       password: {
         label: 'Mot de passe:',
-        placeholder: t('signIn.placeholder.enterPassword'),
-        isRequired: false,
-        order: 2,
+        placeholder: {
+          enterPassword: 'Entrez votre mot de passe',
+        },
       },
       confirm_password: {
         label: 'Confirmer le mot de passe:',
-        order: 1,
       },
     },
     forceNewPassword: {
@@ -219,7 +220,6 @@ Comment catégoriseriez-vous cet e-mail ?`,
       confirmation_code: {
         placeholder: 'Entrez votre code de confirmation:',
         label: 'Nouvelle étiquette',
-        isRequired: false,
       },
       confirm_password: {
         placeholder: "Entrez votre mot de passe s'il vous plaît:",
@@ -233,14 +233,12 @@ Comment catégoriseriez-vous cet e-mail ?`,
       confirmation_code: {
         label: 'Nouvelle étiquette',
         placeholder: 'Entrez votre code de confirmation:',
-        isRequired: false,
       },
     },
     confirmSignIn: {
       confirmation_code: {
         label: 'Nouvelle étiquette',
         placeholder: 'Entrez votre code de confirmation:',
-        isRequired: false,
       },
     },
   },

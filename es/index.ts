@@ -2,7 +2,9 @@ const translation = {
   translation: {
     signIn: {
       username: {
-        placeholder: t('signIn.placeholder.enterEmail'),
+        placeholder: {
+          enterEmail: 'Ingresa tu correo electrónico',
+        },
       },
       button: {
         login: 'Iniciar sesión',
@@ -393,13 +395,12 @@ Las categorías de clasificación son:
     signUp: {
       password: {
         label: 'Contraseña:',
-        placeholder: t('signIn.placeholder.enterPassword'),
-        isRequired: false,
-        order: 2,
+        placeholder: {
+          enterPassword: 'Ingresa tu contraseña',
+        },
       },
       confirm_password: {
         label: 'Confirmar Contraseña:',
-        order: 1,
       },
     },
     forceNewPassword: {
@@ -416,7 +417,6 @@ Las categorías de clasificación son:
       confirmation_code: {
         placeholder: 'Introduce tu Código de Confirmación:',
         label: 'Nueva Etiqueta',
-        isRequired: false,
       },
       confirm_password: {
         placeholder: 'Por favor, introduce tu Contraseña:',
@@ -430,14 +430,12 @@ Las categorías de clasificación son:
       confirmation_code: {
         label: 'Nueva Etiqueta',
         placeholder: 'Introduce tu Código de Confirmación:',
-        isRequired: false,
       },
     },
     confirmSignIn: {
       confirmation_code: {
         label: 'Nueva Etiqueta',
         placeholder: 'Introduce tu Código de Confirmación:',
-        isRequired: false,
       },
     },
   },

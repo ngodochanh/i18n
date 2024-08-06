@@ -191,19 +191,20 @@ Wie würden Sie diese E-Mail kategorisieren?`,
     },
     signIn: {
       username: {
-        placeholder: t('signIn.placeholder.enterEmail'), // "Geben Sie Ihre E-Mail ein"
+        placeholder: {
+          enterEmail: 'Geben Sie Ihre E-Mail ein',
+        },
       },
     },
     signUp: {
       password: {
         label: 'Passwort:',
-        placeholder: t('signIn.placeholder.enterPassword'), // "Geben Sie Ihr Passwort ein"
-        isRequired: false,
-        order: 2,
+        placeholder: {
+          enterPassword: 'Geben Sie Ihr Passwort ein',
+        },
       },
       confirm_password: {
         label: 'Passwort bestätigen:',
-        order: 1,
       },
     },
     forceNewPassword: {
@@ -220,7 +221,6 @@ Wie würden Sie diese E-Mail kategorisieren?`,
       confirmation_code: {
         placeholder: 'Geben Sie Ihren Bestätigungscode ein:',
         label: 'Neues Label',
-        isRequired: false,
       },
       confirm_password: {
         placeholder: 'Geben Sie bitte Ihr Passwort ein:',
@@ -234,14 +234,12 @@ Wie würden Sie diese E-Mail kategorisieren?`,
       confirmation_code: {
         label: 'Neues Label',
         placeholder: 'Geben Sie Ihren Bestätigungscode ein:',
-        isRequired: false,
       },
     },
     confirmSignIn: {
       confirmation_code: {
         label: 'Neues Label',
         placeholder: 'Geben Sie Ihren Bestätigungscode ein:',
-        isRequired: false,
       },
     },
   },

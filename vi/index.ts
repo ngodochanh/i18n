@@ -2,7 +2,9 @@ const translation = {
   translation: {
     signIn: {
       username: {
-        placeholder: t('signIn.placeholder.enterEmail'),
+        placeholder: {
+          enterEmail: 'Nhập email của bạn',
+        },
       },
       button: {
         login: 'Đăng nhập',
@@ -527,13 +529,12 @@ Bạn sẽ phân loại email này như thế nào?`,
     signUp: {
       password: {
         label: 'Mật khẩu:',
-        placeholder: t('signIn.placeholder.enterPassword'),
-        isRequired: false,
-        order: 2,
+        placeholder: {
+          enterPassword: 'Nhập mật khẩu của bạn',
+        },
       },
       confirm_password: {
         label: 'Xác nhận mật khẩu:',
-        order: 1,
       },
     },
     forceNewPassword: {
@@ -550,7 +551,6 @@ Bạn sẽ phân loại email này như thế nào?`,
       confirmation_code: {
         placeholder: 'Nhập mã xác nhận của bạn:',
         label: 'Nhãn mới',
-        isRequired: false,
       },
       confirm_password: {
         placeholder: 'Vui lòng nhập mật khẩu của bạn:',
@@ -564,14 +564,12 @@ Bạn sẽ phân loại email này như thế nào?`,
       confirmation_code: {
         label: 'Nhãn mới',
         placeholder: 'Nhập mã xác nhận của bạn:',
-        isRequired: false,
       },
     },
     confirmSignIn: {
       confirmation_code: {
         label: 'Nhãn mới',
         placeholder: 'Nhập mã xác nhận của bạn:',
-        isRequired: false,
       },
     },
   },

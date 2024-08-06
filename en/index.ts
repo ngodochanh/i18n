@@ -2,7 +2,9 @@ const translation = {
   translation: {
     signIn: {
       username: {
-        placeholder: t('signIn.placeholder.enterEmail'),
+        placeholder: {
+          enterEmail: 'Enter your email',
+        },
       },
       button: {
         login: 'Login',
@@ -524,18 +526,17 @@ How would you categorize this email?`,
     signUp: {
       password: {
         label: 'Password:',
-        placeholder: t('signIn.placeholder.enterPassword'),
-        isRequired: false,
-        order: 2,
+        placeholder: {
+          enterPassword: 'Enter your password',
+        },
       },
       confirm_password: {
         label: 'Confirm Password:',
-        order: 1,
       },
     },
     forceNewPassword: {
       password: {
-        placeholder: 'Enter your Password:',
+        placeholder: 'Enter your password:',
       },
     },
     forgotPassword: {
@@ -547,7 +548,6 @@ How would you categorize this email?`,
       confirmation_code: {
         placeholder: 'Enter your Confirmation Code:',
         label: 'New Label',
-        isRequired: false,
       },
       confirm_password: {
         placeholder: 'Enter your Password Please:',
@@ -561,14 +561,12 @@ How would you categorize this email?`,
       confirmation_code: {
         label: 'New Label',
         placeholder: 'Enter your Confirmation Code:',
-        isRequired: false,
       },
     },
     confirmSignIn: {
       confirmation_code: {
         label: 'New Label',
         placeholder: 'Enter your Confirmation Code:',
-        isRequired: false,
       },
     },
   },

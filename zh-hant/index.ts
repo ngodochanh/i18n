@@ -370,19 +370,20 @@ const translation = {
     },
     signIn: {
       username: {
-        placeholder: t('signIn.placeholder.enterEmail'),
+        placeholder: {
+          enterEmail: '请输入您的电子邮件',
+        },
       },
     },
     signUp: {
       password: {
         label: '密碼:',
-        placeholder: t('signIn.placeholder.enterPassword'),
-        isRequired: false,
-        order: 2,
+        placeholder: {
+          enterPassword: '请输入您的密码',
+        },
       },
       confirm_password: {
         label: '確認密碼:',
-        order: 1,
       },
     },
     forceNewPassword: {
@@ -399,7 +400,6 @@ const translation = {
       confirmation_code: {
         placeholder: '請輸入您的確認代碼:',
         label: '新標籤',
-        isRequired: false,
       },
       confirm_password: {
         placeholder: '請輸入您的密碼:',
@@ -413,14 +413,12 @@ const translation = {
       confirmation_code: {
         label: '新標籤',
         placeholder: '請輸入您的確認代碼:',
-        isRequired: false,
       },
     },
     confirmSignIn: {
       confirmation_code: {
         label: '新標籤',
         placeholder: '請輸入您的確認代碼:',
-        isRequired: false,
       },
     },
   },
