@@ -30,8 +30,7 @@ const translation = {
         noBots: '沒有 Bots.',
         noBotsRecentlyUsed: '最近沒有使用過共用 Bots。',
         retrievingKnowledge: '[擷取知識中...]',
-        dndFileUpload:
-          '您可以透過拖拉的方式上傳檔案。\n支援的檔案類型: {{fileExtensions}}',
+        dndFileUpload: '您可以透過拖拉的方式上傳檔案。\n支援的檔案類型: {{fileExtensions}}',
         uploadError: '錯誤訊息',
         syncStatus: {
           queue: '等待同步',
@@ -53,14 +52,11 @@ const translation = {
       help: {
         overview:
           'Bots 根據預先定義的指示 (instruction) 進行回應。為了讓聊天 (Chat) 能按預期操作，通常需要在訊息中定義上下文。但若於 Bots 內事先定義好，則於聊天時無需定義上下文。',
-        instructions:
-          '定義 Bot 應如何行為。給予模糊的指令可能會導致不可預測的行為，因此請提供清晰且具體的指令。',
+        instructions: '定義 Bot 應如何行為。給予模糊的指令可能會導致不可預測的行為，因此請提供清晰且具體的指令。',
         knowledge: {
-          overview:
-            '透過向 Bot 提供外部知識，它就能夠回答那些不包括在預訓練資料的問題。',
+          overview: '透過向 Bot 提供外部知識，它就能夠回答那些不包括在預訓練資料的問題。',
           url: '透過 URL 指定網頁內容作為知識。如果您設定 YouTube 影片的 URL，該影片的文字記錄將作為知識。',
-          sitemap:
-            '透過指定網站的 sitemap URL，Bot 將自動抓取 sitemap 中的網頁資訊作為知識。',
+          sitemap: '透過指定網站的 sitemap URL，Bot 將自動抓取 sitemap 中的網頁資訊作為知識。',
           file: '上傳的檔案將作為知識。',
         },
       },
@@ -144,24 +140,19 @@ const translation = {
           offset: 'Offset',
         },
         help: {
-          overview:
-            '建立 API 可讓外部客戶端可以存取 Bot 的功能; 透過 API 與外部應用程式整合。',
+          overview: '建立 API 可讓外部客戶端可以存取 Bot 的功能; 透過 API 與外部應用程式整合。',
           endpoint: '用戶端可透過此 endpoint 存取 Bot。',
           usagePlan:
             '用量計畫 (Usage plans) 將設定您的 API 可以從用戶端接收的請求數量和頻率。將 API 和用量計畫關聯以追蹤 API 收到的請求。',
           throttling: '限制用戶端呼叫您的 API 的速率',
-          rateLimit:
-            '輸入客戶端可以呼叫您的 API 的速率（以每秒請求數為單位）。',
-          burstLimit:
-            '輸入客戶端可以向您的 API 發出的併發 (concurrent) 請求數。',
-          quota:
-            '開啟配額以限制使用者在特定時間內可以向您的 API 發出的請求數量。',
+          rateLimit: '輸入客戶端可以呼叫您的 API 的速率（以每秒請求數為單位）。',
+          burstLimit: '輸入客戶端可以向您的 API 發出的併發 (concurrent) 請求數。',
+          quota: '開啟配額以限制使用者在特定時間內可以向您的 API 發出的請求數量。',
           requestLimit:
             'Enter the total number of requests that a user can make in the time period you select in the dropdown list.',
           allowOrigins:
             'Allowed client origins for access. If the origin is not allowed, the caller receives a 403 Forbidden response and is denied access to the API. The Origin must follow the format: "(http|https)://host-name" or "(http|https)://host-name:port" and wildcards(*) can be used.',
-          allowOriginsExample:
-            'e.g. https://your-host-name.com, https://*.your-host-name.com, http://localhost:8000',
+          allowOriginsExample: 'e.g. https://your-host-name.com, https://*.your-host-name.com, http://localhost:8000',
           apiKeys:
             'An API key is an alphanumeric string that used to identify a client of your API. Otherwise, the caller receives a 403 Forbidden response and is denied access to the API.',
         },
@@ -237,8 +228,7 @@ const translation = {
       sharedBotAnalytics: {
         label: {
           pageTitle: 'Shared Bot Analytics',
-          noPublicBotUsages:
-            'During the Calculation Period, no public bots were utilized.',
+          noPublicBotUsages: 'During the Calculation Period, no public bots were utilized.',
           published: 'API is published.',
           SearchCondition: {
             title: 'Calculation Period',
@@ -248,10 +238,8 @@ const translation = {
           sortByCost: 'Sort by Cost',
         },
         help: {
-          overview:
-            'Monitor the usage status of Shared Bots and Published Bot APIs.',
-          calculationPeriod:
-            'If the Calculation Period is not set, the cost for today will be displayed.',
+          overview: 'Monitor the usage status of Shared Bots and Published Bot APIs.',
+          calculationPeriod: 'If the Calculation Period is not set, the cost for today will be displayed.',
         },
       },
       apiManagement: {
@@ -275,10 +263,8 @@ const translation = {
           usagePlanOn: '開啟',
           usagePlanOff: '關閉',
           rateLimit: '<Bold>{{limit}}</Bold> 請求數/秒，客戶端可以呼叫此 API。',
-          burstLimit:
-            '用戶端可以同時向 API 發出 <Bold>{{limit}}</Bold> 個同步 (concurrent) 請求。',
-          requestsLimit:
-            '您可以 <Bold>{{period}}</Bold> 發出 <Bold>{{limit}}</Bold> 個請求 。',
+          burstLimit: '用戶端可以同時向 API 發出 <Bold>{{limit}}</Bold> 個同步 (concurrent) 請求。',
+          requestsLimit: '您可以 <Bold>{{period}}</Bold> 發出 <Bold>{{limit}}</Bold> 個請求 。',
         },
         alert: {
           noApiKeys: {
@@ -381,6 +367,61 @@ const translation = {
         invalidResponse: '收到了未預期的回應。回應的格式不符合預期。',
       },
       notSupportedImage: '目前選取的模型不支援影像。',
+    },
+    signIn: {
+      username: {
+        placeholder: t('signIn.placeholder.enterEmail'),
+      },
+    },
+    signUp: {
+      password: {
+        label: '密碼:',
+        placeholder: t('signIn.placeholder.enterPassword'),
+        isRequired: false,
+        order: 2,
+      },
+      confirm_password: {
+        label: '確認密碼:',
+        order: 1,
+      },
+    },
+    forceNewPassword: {
+      password: {
+        placeholder: '請輸入您的密碼:',
+      },
+    },
+    forgotPassword: {
+      username: {
+        placeholder: '請輸入您的電子郵件:',
+      },
+    },
+    confirmResetPassword: {
+      confirmation_code: {
+        placeholder: '請輸入您的確認代碼:',
+        label: '新標籤',
+        isRequired: false,
+      },
+      confirm_password: {
+        placeholder: '請輸入您的密碼:',
+      },
+    },
+    setupTotp: {
+      QR: {
+        totpIssuer: '測試發行者',
+        totpUsername: 'amplify_qr_test_user',
+      },
+      confirmation_code: {
+        label: '新標籤',
+        placeholder: '請輸入您的確認代碼:',
+        isRequired: false,
+      },
+    },
+    confirmSignIn: {
+      confirmation_code: {
+        label: '新標籤',
+        placeholder: '請輸入您的確認代碼:',
+        isRequired: false,
+      },
     },
   },
 };
